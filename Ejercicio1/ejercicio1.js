@@ -45,8 +45,8 @@ if (isValidateLength) {
         hasRequiredLetters(message, instruccion1),
         hasRequiredLetters(message, instruccion2)
     ]
-    if (fs.existsSync('ejercicio1-salida.txt')) {
-        fs.unlinkSync('ejercicio1-salida.txt');
+    if (fs.existsSync('Verificacion_del_mensaje.txt')) {
+        fs.unlinkSync('Verificacion_del_mensaje.txt');
     }
 
     fs.writeFileSync('Verificacion_del_mensaje.txt', `${instructionFound[0] ? 'SI' : 'NO'}\n${instructionFound[1] ? 'SI' : 'NO'}`);
